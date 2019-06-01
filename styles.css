@@ -1,0 +1,25 @@
+h1{
+  color: pink;  
+}
+
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: izq;
+}
+.item-c {
+  grid-area: der;
+}
+.item-d {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header  header"
+    "izq     der "
+}
